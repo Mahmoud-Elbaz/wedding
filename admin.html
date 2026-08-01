@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Guest Wishes</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#FAF6EF" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Amiri&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- ===================== Login view ===================== -->
+  <section class="auth" id="login-view">
+    <form class="auth__card" id="login-form" novalidate>
+      <h1 class="auth__title">Guest Wishes</h1>
+      <p class="auth__subtitle">Admin sign in</p>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="username" required />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+      </div>
+
+      <button class="btn" type="submit" id="login-btn">Sign in</button>
+      <p class="auth__error" id="login-error" role="alert"></p>
+    </form>
+  </section>
+
+  <!-- ===================== Dashboard view ===================== -->
+  <section class="dash" id="dash-view" hidden>
+    <header class="dash__header">
+      <div>
+        <h1 class="dash__title">Guest Wishes</h1>
+        <p class="dash__count" id="msg-count">—</p>
+      </div>
+      <div class="dash__actions">
+        <input
+          class="dash__search"
+          id="search"
+          type="search"
+          placeholder="Search by name…"
+          aria-label="Search messages by name"
+        />
+        <button class="btn btn--ghost" type="button" id="logout-btn">Sign out</button>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table class="msg-table" aria-label="Guest messages">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Message</th>
+            <th scope="col">Language</th>
+            <th scope="col">Date</th>
+            <th scope="col"><span class="visually-hidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody id="msg-body">
+          <!-- rows injected by admin.js -->
+        </tbody>
+      </table>
+      <p class="empty" id="empty-state" hidden>No messages yet — they will appear here as guests send their wishes.</p>
+    </div>
+  </section>
+
+  <!-- Firebase (compat CDN) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js" defer></script>
+
+  <script src="firebase.js" defer></script>
+  <script src="admin.js" defer></script>
+</body>
+</html>

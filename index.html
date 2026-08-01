@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation — Abdulrahman &amp; Fatimah</title>
+  <meta name="description" content="You are warmly invited to the wedding of Abdulrahman & Fatimah — Saturday, 8 August 2026, 9:00 PM, Vina Hall, 10th of Ramadan City." />
+  <meta name="theme-color" content="#FAF6EF" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Wedding Invitation — Abdulrahman & Fatimah" />
+  <meta property="og:description" content="Saturday, 8 August 2026 · 9:00 PM · Vina Hall, 10th of Ramadan City. We joyfully invite you to celebrate our wedding." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wedding Invitation — Abdulrahman & Fatimah" />
+  <meta name="twitter:description" content="Saturday, 8 August 2026 · 9:00 PM · Vina Hall, 10th of Ramadan City." />
+  <meta name="twitter:image" content="og-image.png" />
+
+  <!-- Icons & PWA -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ring"><span class="loader__monogram">A&amp;F</span></div>
+  </div>
+
+  <!-- Floral corners -->
+  <img class="floral floral--tl" src="floral-corner.svg" alt="" aria-hidden="true" />
+  <img class="floral floral--br" src="floral-corner.svg" alt="" aria-hidden="true" />
+
+  <main class="lang-wrap">
+    <div class="lang-card" data-seq="1" data-anim="scale">
+      <h1 class="lang-card__title" data-seq="2" data-anim="fade">Wedding Invitation</h1>
+      <p class="lang-card__subtitle" data-seq="3" data-anim="fade">Choose your language</p>
+      <p class="lang-card__subtitle-ar" data-seq="3" data-anim="fade" lang="ar" dir="rtl">اختر لغتك</p>
+
+      <div class="lang-card__options" data-seq="4" data-anim="fade">
+        <a class="btn btn--primary lang-btn lang-btn--ar" href="arabic.html" lang="ar">🇪🇬 العربية</a>
+        <a class="btn btn--outline lang-btn" href="english.html">🇬🇧 English</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js" defer></script>
+  <script src="animation.js" defer></script>
+</body>
+</html>

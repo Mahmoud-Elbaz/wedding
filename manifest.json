@@ -1,0 +1,33 @@
+{
+  "name": "Abdulrahman & Fatimah — Wedding Invitation",
+  "short_name": "A & F Wedding",
+  "description": "Wedding invitation of Abdulrahman & Fatimah — Saturday, 8 August 2026, 9:00 PM, Vina Hall, 10th of Ramadan City.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6EF",
+  "theme_color": "#FAF6EF",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

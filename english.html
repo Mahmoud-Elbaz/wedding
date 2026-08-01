@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulrahman &amp; Fatimah — Wedding Invitation</title>
+  <meta name="description" content="Together with our families, we joyfully invite you to celebrate our wedding — Saturday, 8 August 2026, 9:00 PM, Vina Hall, 10th of Ramadan City." />
+  <meta name="theme-color" content="#FAF6EF" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Abdulrahman & Fatimah — Wedding Invitation" />
+  <meta property="og:description" content="Saturday, 8 August 2026 · 9:00 PM · Vina Hall, 10th of Ramadan City. We joyfully invite you to celebrate our wedding." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdulrahman & Fatimah — Wedding Invitation" />
+  <meta name="twitter:description" content="Saturday, 8 August 2026 · 9:00 PM · Vina Hall, 10th of Ramadan City." />
+  <meta name="twitter:image" content="og-image.png" />
+
+  <!-- Icons & PWA -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__ring"><span class="loader__monogram">A&amp;F</span></div>
+  </div>
+
+  <!-- Floral corners (background layer) -->
+  <img class="floral floral--tl" src="floral-corner.svg" alt="" aria-hidden="true" />
+  <img class="floral floral--tr" src="floral-corner.svg" alt="" aria-hidden="true" />
+  <img class="floral floral--bl" src="floral-corner.svg" alt="" aria-hidden="true" loading="lazy" />
+  <img class="floral floral--br" src="floral-corner.svg" alt="" aria-hidden="true" loading="lazy" />
+
+  <main class="page">
+
+    <!-- Hero: invitation text & names -->
+    <section class="hero" aria-label="Invitation">
+      <p class="eyebrow" data-seq="1">
+        Together with our families<br />
+        We joyfully invite you<br />
+        To celebrate our wedding
+      </p>
+
+      <h2 class="script-word" data-seq="2" data-anim="scale">Wedding</h2>
+
+      <h1 class="names">
+        <span class="names__name" data-seq="3" data-anim="scale">Abdulrahman</span>
+        <span class="names__amp" data-seq="4" data-anim="fade">&amp;</span>
+        <span class="names__name" data-seq="5" data-anim="scale">Fatimah</span>
+      </h1>
+
+      <img class="divider" src="divider.svg" alt="" aria-hidden="true" />
+    </section>
+
+    <!-- Countdown -->
+    <section aria-label="Countdown to the wedding">
+      <p class="eyebrow" data-seq="6">Counting down to our special day</p>
+      <div class="countdown" data-seq="7" data-anim="fade">
+        <div class="countdown__unit">
+          <div class="countdown__num" data-days>00</div>
+          <div class="countdown__label">Days</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__num" data-hours>00</div>
+          <div class="countdown__label">Hours</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__num" data-minutes>00</div>
+          <div class="countdown__label">Minutes</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__num" data-seconds>00</div>
+          <div class="countdown__label">Seconds</div>
+        </div>
+      </div>
+      <p class="countdown__done">Today is our Wedding Day ❤️</p>
+    </section>
+
+    <!-- Date, time & venue -->
+    <section aria-label="Date, time and venue">
+      <div class="details" data-stagger>
+        <div class="detail-card">
+          <p class="detail-card__label">The Day</p>
+          <p class="detail-card__value">Saturday</p>
+          <p class="detail-card__sub">8 August 2026</p>
+        </div>
+        <div class="detail-card">
+          <p class="detail-card__label">The Time</p>
+          <p class="detail-card__value">9:00 PM</p>
+          <p class="detail-card__sub">In the evening</p>
+        </div>
+        <div class="detail-card">
+          <p class="detail-card__label">Venue</p>
+          <p class="detail-card__value">Vina Hall</p>
+          <p class="detail-card__sub">10th of Ramadan City</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section data-reveal="fade" aria-label="Directions">
+      <a class="btn btn--primary" data-map-btn href="#">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        Open Google Maps
+      </a>
+    </section>
+
+    <!-- Wishes form -->
+    <section data-reveal aria-label="Leave your wishes">
+      <div class="wishes">
+        <h2 class="wishes__title">Leave Your Wishes</h2>
+        <form data-wishes-form novalidate>
+          <div class="field">
+            <label for="wish-name">Your Name</label>
+            <input id="wish-name" name="name" type="text" autocomplete="name" maxlength="80" required />
+          </div>
+          <div class="field">
+            <label for="wish-message">Your Message</label>
+            <textarea id="wish-message" name="message" maxlength="1000" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">
+            Send Wishes <span class="heart">❤️</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Thank you -->
+    <section class="thanks" data-reveal aria-label="Thank you">
+      <h2 class="thanks__title">Thank You</h2>
+      <p class="thanks__text">
+        Thank you for celebrating this special day with us.<br />
+        Your love, prayers and presence mean the world to us.
+      </p>
+      <p class="thanks__signoff">With Love<br />Abdulrahman &amp; Fatimah</p>
+    </section>
+
+    <footer class="footer" data-reveal="fade">
+      <a href="index.html" lang="ar" dir="rtl">العربية</a> · 8 · 8 · 2026
+    </footer>
+  </main>
+
+  <!-- Back to top -->
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Firebase (compat CDN) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js" defer></script>
+
+  <!-- Site scripts -->
+  <script src="firebase.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="animation.js" defer></script>
+  <script src="countdown.js" defer></script>
+  <script src="maps.js" defer></script>
+</body>
+</html>
