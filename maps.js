@@ -19,7 +19,7 @@
 
   var url =
     VENUE_URL ||
-    "https://www.google.com/maps/search/?api=1&query=" +
+    "https://maps.app.goo.gl/Ua4B5QUfUKviTWSZ7?g_st=aw" +
       encodeURIComponent(VENUE_QUERY);
 
   document.querySelectorAll("[data-map-btn]").forEach(function (btn) {
